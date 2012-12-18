@@ -88,15 +88,15 @@ to incorporate %{name} into applications.
 %{_mandir}/man1/*
 
 %files -n %{libname}
-%{_libdir}/libcdio-paranoia.so.%{major}*
+%{_libdir}/libcdio_paranoia.so.%{major}*
 
 %files -n %{libcdda}
-%{_libdir}/libcdio-cdda.so.%{major}*
+%{_libdir}/libcdio_cdda.so.%{major}*
 
 %files -n %{devname}
 %doc ChangeLog README AUTHORS NEWS INSTALL TODO
 %{_includedir}/cdio
 %{_libdir}/*.so
-%{_libdir}/pkgconfig/libcdio-paranoia.pc
-%{_libdir}/pkgconfig/libcdio-cdda.pc
+%{_libdir}/pkgconfig/libcdio_paranoia.pc
+%{_libdir}/pkgconfig/libcdio_cdda.pc
 

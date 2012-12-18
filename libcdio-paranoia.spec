@@ -94,7 +94,7 @@ to incorporate %{name} into applications.
 %{_libdir}/libcdio_cdda.so.%{major}*
 
 %files -n %{devname}
-%doc ChangeLog README AUTHORS NEWS INSTALL TODO
+%doc ChangeLog README AUTHORS NEWS INSTALL
 %{_includedir}/cdio
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/libcdio_paranoia.pc

@@ -86,6 +86,7 @@ to incorporate %{name} into applications.
 %files apps
 %{_bindir}/*
 %{_mandir}/man1/*
+%lang(jp) %{_mandir}/jp/man1/*
 
 %files -n %{libname}
 %{_libdir}/libcdio_paranoia.so.%{major}*

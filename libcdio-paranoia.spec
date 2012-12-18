@@ -32,6 +32,15 @@ This CDDA reader distribution ('libcdio-cdparanoia') reads audio from the
 CDROM directly as data, with no analog step between, and writes the
 data to a file or pipe as .wav, .aifc or as raw 16 bit linear PCM.
 
+%package apps
+Summary:	Example tool from %{name}
+Group:		Sound
+
+%description apps
+This CDDA reader distribution ('libcdio-cdparanoia') reads audio from the
+CDROM directly as data, with no analog step between, and writes the
+data to a file or pipe as .wav, .aifc or as raw 16 bit linear PCM.
+
 %package -n %{libname}
 Summary:	Library from %{name}
 Group:		System/Libraries

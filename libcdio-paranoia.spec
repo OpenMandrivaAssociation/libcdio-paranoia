@@ -11,12 +11,13 @@
 Summary:	CD-ROM reading library
 Name:		libcdio-paranoia
 Version:	0.90
-Release:	1
+Release:	2
 License:	GPLv3+
 Group:		System/Libraries
 URL:		http://www.gnu.org/software/libcdio/
 Source0:	ftp://ftp.gnu.org/pub/gnu/libcdio/%{name}-%{extver}%{version}.tar.gz
 Source1:	ftp://ftp.gnu.org/pub/gnu/libcdio/%{name}-%{extver}%{version}.tar.gz.sig
+Patch0:		libcdio-paranoia_includedir.patch
 
 BuildRequires:	pkgconfig(libcddb)
 BuildRequires:	pkgconfig(ncurses)

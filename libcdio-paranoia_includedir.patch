@@ -1,0 +1,11 @@
+--- libcdio-paranoia-10.2+0.90/include/cdio/paranoia/paranoia.h~	2012-03-18 23:17:50.000000000 +0000
++++ libcdio-paranoia-10.2+0.90/include/cdio/paranoia/paranoia.h	2012-12-27 14:59:01.570704925 +0000
+@@ -15,7 +15,7 @@
+ #ifndef CDIO__PARANOIA__PARANOIA_H_
+ #define CDIO__PARANOIA__PARANOIA_H_
+ 
+-#include <cdio/paranoia/cdda.h>
++#include <cdio/cdda.h>
+ 
+ /*! Paranoia likes to work with 16-bit numbers rather than
+     (possibly byte-swapped) bytes. So there are this many 

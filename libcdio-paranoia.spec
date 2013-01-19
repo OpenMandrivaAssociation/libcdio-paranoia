@@ -69,6 +69,7 @@ to incorporate %{name} into applications.
 
 %prep
 %setup -qn %{name}-%{extver}%{version}
+%patch0 -p1
 
 %build
 %configure2_5x \

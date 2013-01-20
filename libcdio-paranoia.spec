@@ -69,7 +69,10 @@ to incorporate %{name} into applications.
 
 %prep
 %setup -qn %{name}-%{extver}%{version}
-%patch0 -p1
+
+# fix pkgconfig files
+sed -i -e 's,-I${includedir},-I${includedir}/cdio,g' libcdio_paranoia.pc.in
+sed -i -e 's,-I${includedir},-I${includedir}/cdio,g' libcdio_cdda.pc.in
 
 %build
 %configure2_5x \
@@ -84,6 +87,13 @@ to incorporate %{name} into applications.
 
 %install
 %makeinstall_std
+
+# copy include files to an additional directory
+# this will probably be the location for future releases see:
+# https://github.com/rocky/libcdio-paranoia/commit/b2807f3c7a4126b6078d96adbd37c3760b9f41ab
+mkdir -p %{buildroot}%{_includedir}/cdio/paranoia
+cp -a %{buildroot}%{_includedir}/cdio/*.h %{buildroot}%{_includedir}/cdio/paranoia
+
 
 %files apps
 %{_bindir}/*

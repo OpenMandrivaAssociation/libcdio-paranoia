@@ -2,8 +2,8 @@
 %{?_with_vcd: %{expand: %%global build_vcd 1}}
 %{?_without_vcd: %{expand: %%global build_vcd 0}}
 
-%define extver	10.2+
-%define major	1
+%define extver 10.2+
+%define major 1
 %define libname %mklibname cdio_paranoia %{major}
 %define libcdda %mklibname cdio_cdda %{major}
 %define devname %mklibname -d cdio_paranoia
@@ -11,7 +11,7 @@
 Summary:	CD-ROM reading library
 Name:		libcdio-paranoia
 Version:	0.90
-Release:	3
+Release:	4
 License:	GPLv3+
 Group:		System/Libraries
 URL:		http://www.gnu.org/software/libcdio/

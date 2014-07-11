@@ -11,7 +11,7 @@
 Summary:	CD-ROM reading library
 Name:		libcdio-paranoia
 Version:	0.90
-Release:	13
+Release:	14
 License:	GPLv3+
 Group:		System/Libraries
 URL:		http://www.gnu.org/software/libcdio/

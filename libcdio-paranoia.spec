@@ -17,6 +17,7 @@ Group:		System/Libraries
 URL:		http://www.gnu.org/software/libcdio/
 Source0:	ftp://ftp.gnu.org/pub/gnu/libcdio/%{name}-%{extver}%{version}.tar.gz
 Source1:	ftp://ftp.gnu.org/pub/gnu/libcdio/%{name}-%{extver}%{version}.tar.gz.sig
+Source2:	libcdio-paranoia.rpmlintrc
 Patch0:		libcdio-paranoia_includedir.patch
 
 BuildRequires:	pkgconfig(libcddb)

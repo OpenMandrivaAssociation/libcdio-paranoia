@@ -106,13 +106,13 @@ cp -a %{buildroot}%{_includedir}/cdio/*.h %{buildroot}%{_includedir}/cdio/parano
 
 %files -n %{libcdda}
 %{_libdir}/libcdio_cdda.so.%{major}*
-# (tpg) needed for bug https://issues.openmandriva.org/show_bug.cgi?id=876
-%{_libdir}/libcdio_cdda.so
 
 %files -n %{devname}
 %doc ChangeLog README AUTHORS NEWS INSTALL
 %{_includedir}/cdio
 %{_libdir}/*paranoia.so
+# (tpg) needed for bug https://issues.openmandriva.org/show_bug.cgi?id=876
+%{_libdir}/libcdio_cdda.so
 %{_libdir}/pkgconfig/libcdio_paranoia.pc
 %{_libdir}/pkgconfig/libcdio_cdda.pc
 

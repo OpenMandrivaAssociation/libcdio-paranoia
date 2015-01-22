@@ -11,7 +11,7 @@
 Summary:	CD-ROM reading library
 Name:		libcdio-paranoia
 Version:	0.90
-Release:	16
+Release:	17
 License:	GPLv3+
 Group:		System/Libraries
 URL:		http://www.gnu.org/software/libcdio/
@@ -76,7 +76,7 @@ sed -i -e 's,-I${includedir},-I${includedir}/cdio,g' libcdio_paranoia.pc.in
 sed -i -e 's,-I${includedir},-I${includedir}/cdio,g' libcdio_cdda.pc.in
 
 %build
-%configure2_5x \
+%configure \
 	--disable-static \
 	--disable-rpath \
 	--without-versioned-libs \

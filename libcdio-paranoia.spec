@@ -10,7 +10,7 @@
 
 Summary:	CD-ROM reading library
 Name:		libcdio-paranoia
-Version:	2.0.0
+Version:	2.0.1
 Release:	1
 License:	GPLv3+
 Group:		System/Libraries
@@ -84,10 +84,10 @@ sed -i -e 's,-I${includedir},-I${includedir}/cdio,g' libcdio_cdda.pc.in
 	--disable-vcd-info
 %endif
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files apps
 %{_bindir}/*

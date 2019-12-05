@@ -105,7 +105,7 @@ sed -i -e 's,-I${includedir},-I${includedir}/cdio,g' libcdio_cdda.pc.in
 %{_libdir}/libcdio_cdda.so
 
 %files -n %{devname}
-%doc ChangeLog AUTHORS NEWS INSTALL
+%doc ChangeLog AUTHORS INSTALL
 %{_includedir}/cdio
 %{_libdir}/pkgconfig/libcdio_paranoia.pc
 %{_libdir}/pkgconfig/libcdio_cdda.pc

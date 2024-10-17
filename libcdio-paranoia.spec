@@ -14,7 +14,7 @@ Version:	2.0.1
 Release:	2
 License:	GPLv3+
 Group:		System/Libraries
-URL:		http://www.gnu.org/software/libcdio/
+URL:		https://www.gnu.org/software/libcdio/
 Source0:	ftp://ftp.gnu.org/pub/gnu/libcdio/%{name}-%{extver}%{version}.tar.bz2
 Source1:	ftp://ftp.gnu.org/pub/gnu/libcdio/%{name}-%{extver}%{version}.tar.bz2.sig
 Source2:	libcdio-paranoia.rpmlintrc

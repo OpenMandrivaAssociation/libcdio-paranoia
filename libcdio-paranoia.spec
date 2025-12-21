@@ -20,6 +20,11 @@ Source1:	ftp://ftp.gnu.org/pub/gnu/libcdio/%{name}-%{extver}%{version}.tar.bz2.s
 Source2:	libcdio-paranoia.rpmlintrc
 Patch0:		libcdio-paranoia_includedir.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(libcddb)
 BuildRequires:	pkgconfig(ncurses)
 BuildRequires:	pkgconfig(popt)

@@ -1,4 +1,4 @@
-%define build_vcd 1
+%define build_vcd 0
 %{?_with_vcd: %{expand: %%global build_vcd 1}}
 %{?_without_vcd: %{expand: %%global build_vcd 0}}
 

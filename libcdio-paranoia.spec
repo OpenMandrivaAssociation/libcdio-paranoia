@@ -73,7 +73,7 @@ This is the libraries, include files and other resources you can use
 to incorporate %{name} into applications.
 
 %prep
-%autosetup -qn %{name}-%{extver}%{version} -p1
+%autosetup -n %{name}-%{extver}%{version} -p1
 
 # fix pkgconfig files
 sed -i -e 's,-I${includedir},-I${includedir}/cdio,g' libcdio_paranoia.pc.in

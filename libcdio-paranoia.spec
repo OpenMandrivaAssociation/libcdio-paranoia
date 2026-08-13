@@ -17,7 +17,6 @@ Group:		System/Libraries
 URL:		https://github.com/libcdio/libcdio-paranoia
 Source0:	https://github.com/libcdio/libcdio-paranoia/releases/download/release-%{extver}%{version}/%{name}-%{extver}%{version}.tar.bz2
 Source2:	libcdio-paranoia.rpmlintrc
-Patch0:		libcdio-paranoia_includedir.patch
 
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -73,7 +72,7 @@ This is the libraries, include files and other resources you can use
 to incorporate %{name} into applications.
 
 %prep
-%autosetup -n %{name}-%{extver}%{version} -p1
+%setup -qn %{name}-%{extver}%{version}
 
 # fix pkgconfig files
 sed -i -e 's,-I${includedir},-I${includedir}/cdio,g' libcdio_paranoia.pc.in
